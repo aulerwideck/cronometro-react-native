@@ -70,7 +70,7 @@ class App extends Component<{}, AppState> {
                         Tempo Atual:
                         </Text>
                     <Text style={styles.fraseTexto}>
-                        {this.state.tempo_atual} segundos
+                        {(this.state.tempo_atual).toFixed(1)} segundos
                     </Text>
                 </View>
 
@@ -79,7 +79,7 @@ class App extends Component<{}, AppState> {
                         Último tempo
                     </Text>
                     <Text style={styles.fraseTexto}>
-                        {this.state.ultimo_tempo} segundos
+                        {(this.state.ultimo_tempo).toFixed(1)} segundos
                     </Text>
                 </View>
 
